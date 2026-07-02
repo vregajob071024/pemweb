@@ -1,0 +1,442 @@
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#F4F7FB;
+color:#1F2937;
+}
+
+/* HEADER */
+
+header{
+
+background:#0F172A;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 8%;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+color:white;
+
+gap:10px;
+
+}
+
+.logo i{
+
+font-size:30px;
+
+color:#38BDF8;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover,
+.active{
+
+color:#38BDF8;
+
+}
+
+/* HERO */
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:90px 8%;
+
+gap:60px;
+
+}
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero-text h1{
+
+font-size:50px;
+
+color:#0F172A;
+
+margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+line-height:32px;
+
+margin-bottom:30px;
+
+color:#555;
+
+}
+
+.btn{
+
+background:#2563EB;
+
+padding:15px 35px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#1E40AF;
+
+}
+
+.hero-image{
+
+flex:1;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* FITUR */
+
+.fitur{
+
+padding:80px 8%;
+
+text-align:center;
+
+}
+
+.fitur h2{
+
+font-size:35px;
+
+margin-bottom:50px;
+
+color:#0F172A;
+
+}
+
+.card-container{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+color:#2563EB;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:80px;
+
+background:#0F172A;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+}
+
+.card-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+header{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+.card-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack | Beranda</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-wallet"></i>
+<h2>FinTrack</h2>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html" class="active">Beranda</a></li>
+
+<li><a href="transaksi.php">Transaksi</a></li>
+
+<li><a href="profil.html">Profil</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Kelola Keuangan Anda Lebih Mudah</h1>
+
+<p>
+
+FinTrack membantu Anda mencatat pemasukan, pengeluaran,
+serta melihat laporan transaksi secara praktis dengan tampilan
+modern dan elegan.
+
+</p>
+
+<a href="login.html" class="btn">
+Mulai Sekarang
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700"
+alt="dashboard">
+
+</div>
+
+</section>
+
+<!-- FITUR -->
+
+<section class="fitur">
+
+<h2>Langkah Menggunakan Aplikasi</h2>
+
+<div class="card-container">
+
+<div class="card">
+
+<i class="fa-solid fa-user-plus"></i>
+
+<h3>Daftar Akun</h3>
+
+<p>Buat akun dengan mudah hanya beberapa langkah.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+<h3>Login</h3>
+
+<p>Masuk menggunakan akun yang telah dibuat.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-money-bill-transfer"></i>
+
+<h3>Input Transaksi</h3>
+
+<p>Catat pemasukan maupun pengeluaran Anda.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Lihat Laporan</h3>
+
+<p>Pantau semua transaksi secara realtime.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 FinTrack | Website Aplikasi Transaksi
+
+</p>
+
+</footer>
+
+</body>
+</html>

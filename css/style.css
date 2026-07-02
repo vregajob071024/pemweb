@@ -1,0 +1,88 @@
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+}
+
+.navbar{
+    background:#0F172A;
+}
+
+.hero{
+    padding:140px 0 90px;
+}
+
+.hero h1{
+    color:#0F172A;
+}
+
+.hero p{
+    color:#64748B;
+}
+
+.btn-primary{
+    background:#2563EB;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1D4ED8;
+}
+
+.statistik{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.statistik:hover{
+    transform:translateY(-8px);
+}
+
+.fitur-card{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.fitur-card:hover{
+    transform:translateY(-10px);
+}
+
+footer{
+    background:#0F172A;
+}
+
+.badge{
+    font-size:14px;
+}
+
+
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+}
+
+.card{
+    border-radius:20px;
+}
+
+.form-control{
+    border-radius:12px;
+}
+
+.btn-primary{
+    background:#2563EB;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1D4ED8;
+}
+
+.fa-wallet{
+    color:#2563EB;
+}
+
